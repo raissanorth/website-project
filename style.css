@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+header, .boxes {
+    height: 60vh;
+    padding: 30px;
 }
 
 header {
     border: 1px dashed blue;
-    height: 75vh;
     background-image: url("images/pinkflowers.jpg");
     text-align: center;
     color: white;
+    height: 75vh;
 }
 
 header > h1 {
@@ -24,21 +31,61 @@ nav {
     position: fixed;
     background: #f7d709;
     border: 1px dashed red;
+    font-weight: bold;
+    text-align: right;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style-type: none;
 }
 
 footer {
     font-size: 10pt;
     text-align: center;
+    height: 25vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
 h1 {
     font-size: 60px;
 }
+
+#imagesection {
+    background-color: rgb(71, 11, 44);
+    text-align: center;
+    height: 75vh;
+}
+
+caption {
+    color: white;
+    border: 1px dashed white;
+}
+
+img {
+
+    width: 30%;
+    display: inline-flex;
+    margin: 10px;
+    border: 2px solid rgb(71, 11, 44);
+
+}
+
+
+
+img:hover {
+    border: 2px solid white;
+    
+}
+
+
+
 
 #content {
     margin-left: 8.33%;
@@ -47,7 +94,58 @@ h1 {
 
 }
 
+#tablesection {
+    border: 1px dashed red;
 
+}
+
+#listsection{
+    border: 1px dashed red;
+    background-image: url("images/branches.jpg");
+    background-position: center;
+    background-size: 100%;
+    color: white;
+
+    
+
+
+}
+
+#listsection li {
+        list-style-type: upper-roman;
+}
+
+#imagesection{
+    border: 1px dashed red;
+
+}
+#paragraphsection{
+    border: 1px dashed red;
+    padding-left: 30px; 
+    padding-right: 30px;
+    background: linear-gradient(to bottom, white 20%, rgb(71, 11, 44) 100%);
+
+
+}
+
+#quote {
+    font-family: 'Lobster', serif;
+    font-style: italic;
+    font-size: 40px;
+    color: white;
+
+} 
+
+#quote:hover {
+    color: #f7d709;
+}
+#cicero {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 30px;
+
+}
 
 .col-1 {
     width: 8.33%;
