@@ -97,14 +97,14 @@ h3::before {
     height: 75vh;
 }
 
-img {
+#imagesection img {
     width: 30%;
     display: -flex;
     margin: 10px;
     border: 2px solid rgb(71, 11, 44);
 }
 
-img:hover {
+#imagesection img:hover {
     border: 2px solid white;
     
 }
@@ -128,6 +128,7 @@ img:hover {
 }
 
 #tablesection {
+    table-layout: auto;
     background-color: #b39c94;
 }
 
@@ -135,24 +136,29 @@ img:hover {
     color: #447a97;
 }
 
-td {
+#tablesection caption {
+    caption-side: bottom;
+}
+
+#tablesection td, th {
     background-color:hsl(201, 38%, 43%);
     padding: 10px;
 }
 
-td:hover {
+#tablesection td:hover, #tablesection th:hover {
     background-color: hsla(201, 38%, 43%, 0.4);
 }
 
-td.vertical-text {
-    transform: rotate(90deg);
-    transform-origin: left top 0;
+#tablesection th .vertical-text {
+    transform: rotate(270deg);
+    transform-origin: center center 0;
 }
 
 #end-of-page{
     background-image: url("images/branches.jpg");
     background-position: center;
     background-size: 100%;
+
 }
 
 #listsection{
